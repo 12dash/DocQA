@@ -12,16 +12,12 @@ User roles refers to the people who would be interacting with the API. We will d
 ## Functional Requirements
 
 ### 1. Inputs
-- Accept **PDF** and **JSON** files only; reject all other formats with **HTTP 415**.
-- Enforce a configurable **maximum file size** (default: 50 MB); return **HTTP 413** if exceeded.
+- Accept **PDF** and **JSON** files only.
 - Extract and normalize text from PDF and JSON inputs.
 
 ### 2. Text Processing
 - Chunk text using configurable **chunk size** and **overlap**.
-- Preserve minimal metadata per chunk:
-  - `doc_id`
-  - `page` (if applicable)
-  - `chunk_index`
+- Preserve minimal metadata per chunk such as `doc_id`, `chunk_index`
 
 ### 3. Embeddings & Storage
 - Generate embeddings using a configurable provider (`OpenAI`).
@@ -31,4 +27,3 @@ User roles refers to the people who would be interacting with the API. We will d
 ### 4. Retrieval & Answering
 - Perform **top-k semantic retrieval** per question.
 - Generate answers using a **Retrieval-Augmented Generation (RAG)** pipeline with a large language model.
-- Answers must be grounded strictly in retrieved content by citing the source.
