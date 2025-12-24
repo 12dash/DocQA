@@ -1,0 +1,36 @@
+site_name: DocQA
+site_description: Information about documentation retrieval
+theme:
+  name: material
+  logo: img/logo.png
+  favicon: img/logo.png
+  features:
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+  palette:
+    scheme: slate
+    primary: deep orange
+    accent: lime
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.arithmatex
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
+extra_css:
+  - styles/extra.css
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - User Requirement: pages/user-requirement.md
+  - API: pages/api.md
