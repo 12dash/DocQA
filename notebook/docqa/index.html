@@ -11,10 +11,8 @@
       
       
       
-        <link rel="prev" href="../../pages/api/">
+        <link rel="prev" href="../mvp/">
       
-      
-        <link rel="next" href="../docqa/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Basic Notebook - DocQA-API</title>
+        <title>Tutorial on DocQA - DocQA-API</title>
       
     
     
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docqa-mvp" class="md-skip">
+        <a href="#using-docqa" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Basic Notebook
+              Tutorial on DocQA
             
           </span>
         </div>
@@ -335,6 +333,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../mvp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Notebook
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -354,7 +380,7 @@
   <span class="md-ellipsis">
     
   
-    Basic Notebook
+    Tutorial on DocQA
   
 
     
@@ -372,7 +398,7 @@
   <span class="md-ellipsis">
     
   
-    Basic Notebook
+    Tutorial on DocQA
   
 
     
@@ -398,10 +424,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#helper-function" class="md-nav__link">
+  <a href="#set-the-config" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Helper Function
+        Set the config
       
     </span>
   </a>
@@ -409,54 +435,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#config" class="md-nav__link">
+  <a href="#question-answer-engine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Config
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#document-loaders" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Document Loaders
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chunking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Chunking
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-embeddings-vector-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Embeddings + Vector Store
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retrieval-helpers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retrieval Helpers
+        Question-Answer Engine
       
     </span>
   </a>
@@ -467,34 +449,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../docqa/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Tutorial on DocQA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -534,10 +488,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#helper-function" class="md-nav__link">
+  <a href="#set-the-config" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Helper Function
+        Set the config
       
     </span>
   </a>
@@ -545,54 +499,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#config" class="md-nav__link">
+  <a href="#question-answer-engine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Config
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#document-loaders" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Document Loaders
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#chunking" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Chunking
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-embeddings-vector-store" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Embeddings + Vector Store
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#retrieval-helpers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retrieval Helpers
+        Question-Answer Engine
       
     </span>
   </a>
@@ -1052,42 +962,23 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </style>
 <!-- End of mermaid configuration --><div class="jupyter-wrapper">
 <div class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=38a982b0-eafb-47f4-a3f6-5636bef4e0c6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3c0ac50d-677d-47ec-873e-bdf4b51b3587">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="docqa-mvp">DocQA MVP<a class="anchor-link" href="#docqa-mvp">¶</a></h1><p>I created this notebook to demonstrate the <strong>core Retrieval-Augmented Generation (RAG)</strong> workflow that became the foundation of the <code>DocQA</code> package. I made a deliberate decision to use <strong>Ollama</strong> during experimentation so I could iterate quickly without spending OpenAI credits. The components are designed to be <strong>modular</strong>, so I can easily swap Ollama for <strong>OpenAI (or any other provider)</strong> later by changing the LLM and embedding implementations—without rewriting the pipeline.</p>
-<p><strong>Topics</strong></p>
-<ol>
-<li>Load documents (<strong>PDF</strong> + <strong>JSON</strong>)</li>
-<li>Split into chunks</li>
-<li>Embed chunks and store in a <strong>Vector DB (FAISS)</strong></li>
-<li>Retrieve top‑K similar chunks for a question</li>
-<li>Generate an answer with an LLM (<strong>Ollama</strong>)</li>
-</ol>
-<p><strong>Local Setup for Ollama</strong></p>
-<p>I run Ollama locally and pull the models I need:</p>
-<div class="highlight"><pre><span></span>ollama<span class="w"> </span>serve
-ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5:7b
-ollama<span class="w"> </span>pull<span class="w"> </span>nomic-embed-text
-</pre></div>
-<p>Models used :</p>
-<ul>
-<li><code>qwen2.5:7b</code> → answer generation</li>
-<li><code>nomic-embed-text</code> → embeddings for vector search</li>
-</ul>
+<h1 id="using-docqa">Using DocQA<a class="anchor-link" href="#using-docqa">¶</a></h1><p>Test out the functionality for the document answering python package</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=52f9e091-c347-4cd4-82be-ace2b58828e7">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5303fff7-b9c0-4903-bea3-e1fc05d6d47e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-1">
@@ -1100,45 +991,29 @@ ollama<span class="w"> </span>pull<span class="w"> </span>nomic-embed-text
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_core.documents</span><span class="w"> </span><span class="kn">import</span> <span class="n">Document</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_text_splitters</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.vectorstores</span><span class="w"> </span><span class="kn">import</span> <span class="n">FAISS</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">langchain_ollama</span><span class="w"> </span><span class="kn">import</span> <span class="n">ChatOllama</span><span class="p">,</span> <span class="n">OllamaEmbeddings</span>
-
-<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">docqa.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">Settings</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">docqa.pipeline.engine</span><span class="w"> </span><span class="kn">import</span> <span class="n">QAEngine</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">import json
-from pathlib import Path
-from typing import List, Tuple
-
-from langchain_core.documents import Document
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import FAISS
-from langchain_ollama import ChatOllama, OllamaEmbeddings
-
-import time</div>
+<div class="clipboard-copy-txt" id="cell-1">from docqa.config import Settings
+from docqa.pipeline.engine import QAEngine</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0997fa00-3e05-4283-8712-143c57c758ab">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=43f06585-ed71-4007-a9fb-491a802169c8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="helper-function">Helper Function<a class="anchor-link" href="#helper-function">¶</a></h2>
+<h2 id="set-the-config">Set the config<a class="anchor-link" href="#set-the-config">¶</a></h2>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fc083d7d-2128-47ff-af1a-e80bf160cc10">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=99913df5-ed3b-466d-900c-6df65a86d95c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1156,26 +1031,43 @@ import time</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">convert_csv_to_json</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"../../documents/</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">.csv"</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
-    <span class="n">records</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s2">"records"</span><span class="p">)</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="sa">f</span><span class="s2">"../../documents/</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">.json"</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">records</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">settings</span> <span class="o">=</span> <span class="n">Settings</span><span class="p">(</span>
+        <span class="n">llm_provider</span><span class="o">=</span><span class="s2">"ollama"</span><span class="p">,</span>
+        <span class="n">llm_model</span><span class="o">=</span><span class="s2">"qwen2.5:7b"</span><span class="p">,</span>
+        <span class="n">embed_provider</span><span class="o">=</span><span class="s2">"ollama"</span><span class="p">,</span>
+        <span class="n">embed_model</span><span class="o">=</span><span class="s2">"nomic-embed-text"</span><span class="p">,</span>
+        <span class="n">faiss_index_dir</span><span class="o">=</span><span class="s2">"./.local/faiss_index"</span><span class="p">,</span>
+        <span class="n">retrieval_type</span><span class="o">=</span><span class="s2">"mmr"</span><span class="p">,</span>
+        <span class="n">retrieval_k</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">def convert_csv_to_json(file):
-    df = pd.read_csv(f"../../documents/{file}.csv", index_col=0)
-    df = df.fillna("")
-    records = df.to_dict(orient="records")
-    with open(f"../../documents/{file}.json", "w", encoding="utf-8") as f:
-        json.dump(records, f, indent=2, ensure_ascii=False)</div>
+<div class="clipboard-copy-txt" id="cell-2">settings = Settings(
+        llm_provider="ollama",
+        llm_model="qwen2.5:7b",
+        embed_provider="ollama",
+        embed_model="nomic-embed-text",
+        faiss_index_dir="./.local/faiss_index",
+        retrieval_type="mmr",
+        retrieval_k=4,
+    )</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e9cf3ef8-0606-45a4-91b9-33221078b856">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Validate that the value provided for the settings are correct</p>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=73c3482f-23b5-4fdc-917c-2fd151e6ffda">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4524ea9c-0ca3-47d5-97ad-07251a7facc6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1193,38 +1085,27 @@ import time</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># convert_csv_to_json("sample_json")</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">settings</span><span class="o">.</span><span class="n">validate</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3"># convert_csv_to_json("sample_json")</div>
+<div class="clipboard-copy-txt" id="cell-3">settings.validate()</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4cfcef2b-8bc2-4eec-9668-a3b57671c2dd">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5f24df62-6d89-4ada-a13a-bc4a4614493f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="config">Config<a class="anchor-link" href="#config">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5d3a1c42-c5e6-4920-83d5-f4d1d5eea741">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Ollama Config</p>
+<h2 id="question-answer-engine">Question-Answer Engine<a class="anchor-link" href="#question-answer-engine">¶</a></h2>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d42f7640-096e-4394-b9e0-dc794de7efbc">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9f12dc67-1b9d-421b-bc84-3ed1710b3aba">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1242,31 +1123,27 @@ import time</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">LLM_MODEL</span> <span class="o">=</span> <span class="s2">"qwen2.5:7b"</span>
-<span class="n">EMBED_MODEL</span> <span class="o">=</span> <span class="s2">"nomic-embed-text"</span>
-<span class="n">TEMPERATURE</span> <span class="o">=</span> <span class="mf">0.0</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">engine</span> <span class="o">=</span> <span class="n">QAEngine</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">LLM_MODEL = "qwen2.5:7b"
-EMBED_MODEL = "nomic-embed-text"
-TEMPERATURE = 0.0</div>
+<div class="clipboard-copy-txt" id="cell-4">engine = QAEngine(settings)</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=45f02eea-1807-4873-a23b-4716ec6bd369">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a79cfe5d-ad9b-4f19-a795-8e2c6249f2a2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Retriever Config</p>
+<p>We will ingest the pdf document first</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b82710e9-5fc1-4b3e-a128-cd29134edaf1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8fd1db0-fca1-47a5-b6c5-bed4092d824d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1284,33 +1161,42 @@ TEMPERATURE = 0.0</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">FAISS_INDEX_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">"./faiss_index"</span><span class="p">)</span>
-<span class="n">CHUNK_SIZE</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="n">CHUNK_OVERLAP</span> <span class="o">=</span> <span class="mi">200</span>
-<span class="n">TOP_K</span> <span class="o">=</span> <span class="mi">6</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ingest_stats</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">ingest_pdf</span><span class="p">(</span><span class="s2">"../../documents/soc2-type2.pdf"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ingest:"</span><span class="p">,</span> <span class="n">ingest_stats</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">FAISS_INDEX_DIR = Path("./faiss_index")
-CHUNK_SIZE = 1000
-CHUNK_OVERLAP = 200
-TOP_K = 6</div>
+<div class="clipboard-copy-txt" id="cell-5">ingest_stats = engine.ingest_pdf("../../documents/soc2-type2.pdf")
+print("Ingest:", ingest_stats)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Ingest: {'ingested_pages': 56, 'chunks_added': 193, 'index_dir': './.local/faiss_index'}
+</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=87de8a00-e7ce-46b0-af60-a08eb34534ba">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7635cd5f-9949-4f12-911a-aff69c28761c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="document-loaders">Document Loaders<a class="anchor-link" href="#document-loaders">¶</a></h2>
+<p>Next we will ingest the sample json</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ac0558f9-6697-4eb0-b1a0-9fc1bc42897e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c1ac0b39-8df6-4ebb-aa55-cd9fc9b36a0f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1328,16 +1214,31 @@ TOP_K = 6</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">langchain_community.document_loaders</span><span class="w"> </span><span class="kn">import</span> <span class="n">PyPDFLoader</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ingest_stats</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">ingest_json</span><span class="p">(</span><span class="s2">"../../documents/sample_json.json"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ingest:"</span><span class="p">,</span> <span class="n">ingest_stats</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">from langchain_community.document_loaders import PyPDFLoader</div>
+<div class="clipboard-copy-txt" id="cell-6">ingest_stats = engine.ingest_json("../../documents/sample_json.json")
+print("Ingest:", ingest_stats)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Ingest: {'ingested_pages': 19, 'chunks_added': 19, 'index_dir': './.local/faiss_index'}
+</pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3be695c4-4c36-481d-b215-0653968cd642">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1666431e-cf4b-458d-8674-be064fc2796f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1355,29 +1256,21 @@ TOP_K = 6</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">load_pdf</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Document</span><span class="p">]:</span>
-<span class="w">    </span><span class="sd">"""Loads a pdf"""</span>
-    <span class="n">loader</span> <span class="o">=</span> <span class="n">PyPDFLoader</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
-    <span class="n">pages</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">pages</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">answer</span><span class="p">(</span><span class="s2">"Which cloud providers do you rely on?"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-7">def load_pdf(path: str) -&gt; list[Document]:
-    """Loads a pdf"""
-    loader = PyPDFLoader(path)
-    pages = loader.load()
-    return pages</div>
+<div class="clipboard-copy-txt" id="cell-7">result = engine.answer("Which cloud providers do you rely on?")</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=88820545-37ed-4bcd-9b60-f2cf00734d4b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8e31c984-3f07-4909-8746-9e17c265c4e9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-8">
@@ -1390,438 +1283,11 @@ TOP_K = 6</div>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">load_json</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Document</span><span class="p">]:</span>
-<span class="w">    </span><span class="sd">"""Loads a json"""</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">))</span>
-    <span class="n">docs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Document</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-        <span class="n">text</span> <span class="o">=</span> <span class="p">(</span>
-            <span class="sa">f</span><span class="s2">"Question: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'question'</span><span class="p">,</span><span class="s1">''</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
-            <span class="sa">f</span><span class="s2">"Answer: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'answer'</span><span class="p">,</span><span class="s1">''</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
-            <span class="sa">f</span><span class="s2">"Comments: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'comments'</span><span class="p">,</span><span class="s1">''</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
-        <span class="p">)</span>
-        <span class="n">docs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-            <span class="n">Document</span><span class="p">(</span>
-                <span class="n">page_content</span><span class="o">=</span><span class="n">text</span><span class="p">,</span>
-                <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"id"</span><span class="p">),</span> <span class="s2">"source"</span><span class="p">:</span> <span class="n">path</span><span class="p">}</span>
-            <span class="p">)</span>
-        <span class="p">)</span>
-    <span class="k">return</span> <span class="n">docs</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Answer:"</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s2">"answer"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Top source:"</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="s2">"sources"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">result</span><span class="p">[</span><span class="s2">"sources"</span><span class="p">]</span> <span class="k">else</span> <span class="kc">None</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">def load_json(path: str) -&gt; List[Document]:
-    """Loads a json"""
-    data = json.loads(Path(path).read_text(encoding="utf-8"))
-    docs: List[Document] = []
-
-    for item in data:
-        text = (
-            f"Question: {item.get('question','')}\n"
-            f"Answer: {item.get('answer','')}\n"
-            f"Comments: {item.get('comments','')}\n"
-        )
-        docs.append(
-            Document(
-                page_content=text,
-                metadata={"id": item.get("id"), "source": path}
-            )
-        )
-    return docs</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6dc186fc-d87e-4666-bb54-d3613dedcd28">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="chunking">Chunking<a class="anchor-link" href="#chunking">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=32658fe2-08e5-46e2-8287-e91b3b2a12d9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-9">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">split_documents</span><span class="p">(</span>
-    <span class="n">docs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Document</span><span class="p">],</span>
-    <span class="n">chunk_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">CHUNK_SIZE</span><span class="p">,</span>
-    <span class="n">overlap</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">CHUNK_OVERLAP</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Document</span><span class="p">]:</span>
-    <span class="n">splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
-        <span class="n">chunk_size</span><span class="o">=</span><span class="n">chunk_size</span><span class="p">,</span>
-        <span class="n">chunk_overlap</span><span class="o">=</span><span class="n">overlap</span><span class="p">,</span>
-        <span class="n">add_start_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="p">)</span>
-    <span class="k">return</span> <span class="n">splitter</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">docs</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-9">def split_documents(
-    docs: List[Document],
-    chunk_size: int = CHUNK_SIZE,
-    overlap: int = CHUNK_OVERLAP,
-) -&gt; List[Document]:
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=overlap,
-        add_start_index=True,
-    )
-    return splitter.split_documents(docs)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d755a60c-4be5-45eb-97cb-1fa5eceb8b90">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="creating-embeddings-vector-store">Creating Embeddings + Vector Store<a class="anchor-link" href="#creating-embeddings-vector-store">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=c6778a19-4b61-4629-bb8b-3a330ac943d9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-10">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">embeddings</span> <span class="o">=</span> <span class="n">OllamaEmbeddings</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">EMBED_MODEL</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-10">embeddings = OllamaEmbeddings(model=EMBED_MODEL)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=aa0de0e5-2c13-4917-8e9e-368e5fe04e3b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-11">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">build_or_load_faiss</span><span class="p">(</span>
-    <span class="n">chunks</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Document</span><span class="p">],</span>
-    <span class="n">index_dir</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">FAISS_INDEX_DIR</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">FAISS</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">"""Create FAISS index if missing; otherwise load and add documents."""</span>
-    <span class="k">if</span> <span class="n">index_dir</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-        <span class="n">vs</span> <span class="o">=</span> <span class="n">FAISS</span><span class="o">.</span><span class="n">load_local</span><span class="p">(</span>
-            <span class="nb">str</span><span class="p">(</span><span class="n">index_dir</span><span class="p">),</span>
-            <span class="n">embeddings</span><span class="p">,</span>
-            <span class="n">allow_dangerous_deserialization</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-        <span class="p">)</span>
-        <span class="n">vs</span><span class="o">.</span><span class="n">add_documents</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">vs</span> <span class="o">=</span> <span class="n">FAISS</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span><span class="n">chunks</span><span class="p">,</span> <span class="n">embeddings</span><span class="p">)</span>
-
-    <span class="n">vs</span><span class="o">.</span><span class="n">save_local</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">index_dir</span><span class="p">))</span>
-    <span class="k">return</span> <span class="n">vs</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-11">def build_or_load_faiss(
-    chunks: List[Document],
-    index_dir: Path = FAISS_INDEX_DIR,
-) -&gt; FAISS:
-    """Create FAISS index if missing; otherwise load and add documents."""
-    if index_dir.exists():
-        vs = FAISS.load_local(
-            str(index_dir),
-            embeddings,
-            allow_dangerous_deserialization=True,
-        )
-        vs.add_documents(chunks)
-    else:
-        vs = FAISS.from_documents(chunks, embeddings)
-
-    vs.save_local(str(index_dir))
-    return vs</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ff9a0364-274d-4b2b-8934-e7088a40ae81">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="retrieval-helpers">Retrieval Helpers<a class="anchor-link" href="#retrieval-helpers">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=768e2d32-eacd-4ef3-9591-fb8bd4a8a000">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-12">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">retrieve_with_scores</span><span class="p">(</span>
-    <span class="n">vector_store</span><span class="p">:</span> <span class="n">FAISS</span><span class="p">,</span>
-    <span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-    <span class="n">k</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">TOP_K</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">Document</span><span class="p">,</span> <span class="nb">float</span><span class="p">]]:</span>
-    <span class="k">return</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">similarity_search_with_score</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
-
-
-<span class="k">def</span><span class="w"> </span><span class="nf">format_context</span><span class="p">(</span><span class="n">docs_and_scores</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">Document</span><span class="p">,</span> <span class="nb">float</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">"""</span>
-<span class="sd">        Creates the context from the retrieved sources by appending metadata and citation for the downstream LLM to answer</span>
-<span class="sd">    """</span>
-    <span class="n">parts</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">score</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">docs_and_scores</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="n">meta</span> <span class="o">=</span> <span class="n">doc</span><span class="o">.</span><span class="n">metadata</span> <span class="ow">or</span> <span class="p">{}</span>
-        <span class="n">cite</span> <span class="o">=</span> <span class="p">[]</span>
-        
-        <span class="k">if</span> <span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"source_type"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"pdf"</span><span class="p">:</span>
-            <span class="k">if</span> <span class="s2">"page"</span> <span class="ow">in</span> <span class="n">meta</span><span class="p">:</span>
-                <span class="n">cite</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"page=</span><span class="si">{</span><span class="n">meta</span><span class="p">[</span><span class="s1">'page'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-        
-        <span class="k">if</span> <span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"source_type"</span><span class="p">)</span> <span class="o">==</span> <span class="s2">"json"</span> <span class="ow">and</span> <span class="n">meta</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"id"</span><span class="p">):</span>
-            <span class="n">cite</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">"id=</span><span class="si">{</span><span class="n">meta</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-        
-        <span class="n">cite_str</span> <span class="o">=</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cite</span><span class="p">)</span> <span class="k">if</span> <span class="n">cite</span> <span class="k">else</span> <span class="s2">"no-meta"</span>
-        
-        <span class="n">parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">"[</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">] (</span><span class="si">{</span><span class="n">cite_str</span><span class="si">}</span><span class="s2">, score=</span><span class="si">{</span><span class="n">score</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">)</span><span class="se">\n</span><span class="si">{</span><span class="n">doc</span><span class="o">.</span><span class="n">page_content</span><span class="si">}</span><span class="s2">"</span>
-        <span class="p">)</span>
-
-    <span class="k">return</span> <span class="s2">"</span><span class="se">\n\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parts</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-12">def retrieve_with_scores(
-    vector_store: FAISS,
-    query: str,
-    k: int = TOP_K,
-) -&gt; List[Tuple[Document, float]]:
-    return vector_store.similarity_search_with_score(query, k=k)
-
-
-def format_context(docs_and_scores: List[Tuple[Document, float]]) -&gt; str:
-    """
-        Creates the context from the retrieved sources by appending metadata and citation for the downstream LLM to answer
-    """
-    parts = []
-    for i, (doc, score) in enumerate(docs_and_scores, 1):
-        meta = doc.metadata or {}
-        cite = []
-        
-        if meta.get("source_type") == "pdf":
-            if "page" in meta:
-                cite.append(f"page={meta['page']}")
-        
-        if meta.get("source_type") == "json" and meta.get("id"):
-            cite.append(f"id={meta['id']}")
-        
-        cite_str = ", ".join(cite) if cite else "no-meta"
-        
-        parts.append(
-            f"[{i}] ({cite_str}, score={score:.4f})\n{doc.page_content}"
-        )
-
-    return "\n\n".join(parts)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a10aa20c-8692-4fc3-8f0f-2f9ee15c7ff5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-13">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">llm</span> <span class="o">=</span> <span class="n">ChatOllama</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">LLM_MODEL</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">TEMPERATURE</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-13">llm = ChatOllama(model=LLM_MODEL, temperature=TEMPERATURE)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2b61cac8-99de-4629-a4e8-03e5754b8d36">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-14">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">answer_one</span><span class="p">(</span><span class="n">query</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">context</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="n">prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"""You are a security and compliance documentation assistant.</span>
-
-<span class="s2">Answer the question using ONLY the information below.</span>
-<span class="s2">Rules:</span>
-<span class="s2">- Do NOT use external knowledge.</span>
-<span class="s2">- Do NOT guess or infer.</span>
-<span class="s2">- If the answer is not clearly present, respond exactly with: Data not found.</span>
-
-<span class="s2">Information:</span>
-<span class="si">{</span><span class="n">context</span><span class="si">}</span>
-
-<span class="s2">Question:</span>
-<span class="si">{</span><span class="n">query</span><span class="si">}</span>
-
-<span class="s2">Answer:</span>
-<span class="s2">"""</span>
-    <span class="n">resp</span> <span class="o">=</span> <span class="n">llm</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-14">def answer_one(query: str, context: str) -&gt; str:
-    prompt = f"""You are a security and compliance documentation assistant.
-
-Answer the question using ONLY the information below.
-Rules:
-- Do NOT use external knowledge.
-- Do NOT guess or infer.
-- If the answer is not clearly present, respond exactly with: Data not found.
-
-Information:
-{context}
-
-Question:
-{query}
-
-Answer:
-"""
-    resp = llm.invoke(prompt)
-    return resp.content.strip()
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d25f8879-2438-4184-a6e0-cb53b2e496d8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-15">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-
-<span class="n">pdf_docs</span> <span class="o">=</span> <span class="n">load_pdf</span><span class="p">(</span><span class="s2">"../../documents/soc2-type2.pdf"</span><span class="p">)</span>
-<span class="n">json_docs</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="s2">"../../documents/sample_json.json"</span><span class="p">)</span>
-
-<span class="n">all_docs</span> <span class="o">=</span> <span class="n">pdf_docs</span> <span class="o">+</span> <span class="n">json_docs</span>
-<span class="n">splits</span> <span class="o">=</span> <span class="n">split_documents</span><span class="p">(</span><span class="n">all_docs</span><span class="p">)</span>
-
-<span class="n">vector_store</span> <span class="o">=</span> <span class="n">build_or_load_faiss</span><span class="p">(</span><span class="n">splits</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Loaded docs: pdf=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">pdf_docs</span><span class="p">)</span><span class="si">}</span><span class="s2">, json=</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">json_docs</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Chunks: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">splits</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Index ready. Elapsed: </span><span class="si">{</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">t0</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">s"</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-15">t0 = time.time()
-
-pdf_docs = load_pdf("../../documents/soc2-type2.pdf")
-json_docs = load_json("../../documents/sample_json.json")
-
-all_docs = pdf_docs + json_docs
-splits = split_documents(all_docs)
-
-vector_store = build_or_load_faiss(splits)
-
-print(f"Loaded docs: pdf={len(pdf_docs)}, json={len(json_docs)}")
-print(f"Chunks: {len(splits)}")
-print(f"Index ready. Elapsed: {time.time() - t0:.2f}s")</div>
+<div class="clipboard-copy-txt" id="cell-8">print("\nAnswer:", result["answer"])
+print("\nTop source:", result["sources"][0] if result["sources"] else None)</div>
 </div>
 </div>
 </div>
@@ -1833,248 +1299,10 @@ print(f"Index ready. Elapsed: {time.time() - t0:.2f}s")</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Loaded docs: pdf=56, json=19
-Chunks: 212
-Index ready. Elapsed: 6.03s
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2c08e6d9-31c7-4135-8497-7d45215a84d2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-16">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">retriever</span> <span class="o">=</span> <span class="n">vector_store</span><span class="o">.</span><span class="n">as_retriever</span><span class="p">(</span>
-    <span class="n">search_type</span><span class="o">=</span><span class="s2">"similarity"</span><span class="p">,</span> 
-    <span class="n">search_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">"k"</span><span class="p">:</span> <span class="mi">50</span><span class="p">}</span>
-<span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-16">retriever = vector_store.as_retriever(
-    search_type="similarity", 
-    search_kwargs={"k": 50}
-)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f6669efe-098b-4560-b93d-cd13bfec95d8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-17">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"Which cloud providers do you rely on?"</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-17">query = "Which cloud providers do you rely on?"</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ebc4cc92-cf2b-47be-a9a2-5bb5d26238ef">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-18">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">docs_and_scores</span> <span class="o">=</span> <span class="n">retrieve_with_scores</span><span class="p">(</span><span class="n">vector_store</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">TOP_K</span><span class="p">)</span>
-<span class="n">context</span> <span class="o">=</span> <span class="n">format_context</span><span class="p">(</span><span class="n">docs_and_scores</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-18">docs_and_scores = retrieve_with_scores(vector_store, query, k=TOP_K)
-context = format_context(docs_and_scores)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e139abb3-b342-48b3-978d-b8bb7859c8ac">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-19">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">context</span><span class="p">[:</span><span class="mi">2000</span><span class="p">])</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-19">print(context[:2000])</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[1] (no-meta, score=0.7132)
-2 
-INDEPENDENT SERVICE AUDITOR’S REPORT 
- 
-To Board of Directors 
-Product Fruits s.r.o. 
- 
-Scope 
- 
-We have examined the accompanying “ Description of Product Fruits , a cloud -hosted software application ” 
-provided by Product Fruits s.r.o. throughout the period July 24, 2024 to July 23, 2025  (the description) and the 
-suitability of the design and operating effectiveness of controls to meet Product Fruits s.r.o. ’s service 
-commitments and system requirements based on the criteria for Security, Confidentiality, Availability, Processing 
-Integrity &amp; Privacy principles set forth in TSP Section  100 Principles and Criteria, Trust Services Principles and 
-Criteria for Security, Confidentiality and Availability (applicable trust services criteria) throughout the period July 
-24, 2024 to July 23, 2025. 
- 
-Product Fruits s.r.o.  uses Amazon Web Services Inc. (AWS), a subservice organization, to provide cloud
+<pre>
+Answer: Amazon Web Services Inc. (AWS)
 
-[2] (no-meta, score=0.7132)
-2 
-INDEPENDENT SERVICE AUDITOR’S REPORT 
- 
-To Board of Directors 
-Product Fruits s.r.o. 
- 
-Scope 
- 
-We have examined the accompanying “ Description of Product Fruits , a cloud -hosted software application ” 
-provided by Product Fruits s.r.o. throughout the period July 24, 2024 to July 23, 2025  (the description) and the 
-suitability of the design and operating effectiveness of controls to meet Product Fruits s.r.o. ’s service 
-commitments and system requirements based on the criteria for Security, Confidentiality, Availability, Processing 
-Integrity &amp; Privacy principles set forth in TSP Section  100 Principles and Criteria, Trust Services Principles and 
-Criteria for Security, Confidentiality and Availability (applicable trust services criteria) throughout the period July 
-24, 2024 to July 23, 2025. 
- 
-Product Fruits s.r.o.  uses Amazon Web Services Inc. (AWS), a subservice organization, to provide cloud
-
-[3] (no-meta, score=0.7132)
-2 
-INDEPENDENT SERVICE AUDITOR’S REPORT 
- 
-To Board of Directors 
-Product Frui
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a9f4e0bc-28a5-41fa-9776-bc113ce98ca4">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-20">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ans</span> <span class="o">=</span> <span class="n">answer_one</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-20">ans = answer_one(query, context)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a87eda70-5875-496e-b873-ec859809ca6f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-21">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ans</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-21">print(ans)</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Product Fruits s.r.o. relies on Amazon Web Services Inc. (AWS) as a cloud provider.
+Top source: {'source': '../../documents/soc2-type2.pdf', 'source_type': 'pdf', 'page': 4, 'chunk_index': 4, 'doc_id': None, 'text_snippet': '2  INDEPENDENT SERVICE AUDITOR’S REPORT    To Board of Directors  Product Fruits s.r.o.    Scope    We have examined the accompanying “ Description of Product Fruits , a cloud -hosted software application ”  provided by Product Fruits s.r.o. throughout the period July 24, 2024 to July 23, 2025  (the description) and the  suitability of the design and operating effectiveness of controls to meet Product Fruits s.r.o. ’s service  commitments and system requirements based on the criteria for Security, Confidentiality, Availability, Processing  Integrity &amp; Privacy principles set forth in TSP Section  100 Principles and Criteria, Trust Services Principles and  Criteria for Security, Confidentiality and Availability (applicable trust services criteria) throughout the period July  24, 2024 to July 23, 2025.    Product Fruits s.r.o.  uses Amazon Web Services Inc. (AWS), a subservice organization, to provide cloud', 'score': 0.0}
 </pre>
 </div>
 </div>

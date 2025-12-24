@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Information about documentation retrieval">
+        <meta name="description" content="Fast API to serve DocQA functionalities">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>API - DocQA</title>
+        <title>API - DocQA-API</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#api" class="md-skip">
+        <a href="#api-endpoints" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="DocQA" class="md-header__button md-logo" aria-label="DocQA" data-md-component="logo">
+    <a href="../.." title="DocQA-API" class="md-header__button md-logo" aria-label="DocQA-API" data-md-component="logo">
       
   <img src="../../img/logo.png" alt="logo">
 
@@ -105,7 +105,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            DocQA
+            DocQA-API
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -191,12 +191,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="DocQA" class="md-nav__button md-logo" aria-label="DocQA" data-md-component="logo">
+    <a href="../.." title="DocQA-API" class="md-nav__button md-logo" aria-label="DocQA-API" data-md-component="logo">
       
   <img src="../../img/logo.png" alt="logo">
 
     </a>
-    DocQA
+    DocQA-API
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -322,22 +322,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
+  <a href="#swagger-testing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoints
+        Swagger Testing
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Endpoints">
+    <nav class="md-nav" aria-label="Swagger Testing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#post-upload-document" class="md-nav__link">
+  <a href="#ingest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        POST /upload-document
+        Ingest
       
     </span>
   </a>
@@ -345,32 +345,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-statusdoc_id" class="md-nav__link">
+  <a href="#answer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GET /status/{doc_id}
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-docsdoc_idmetadata" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /docs/{doc_id}/metadata
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /questions
+        Answer
       
     </span>
   </a>
@@ -379,17 +357,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Output
-      
-    </span>
-  </a>
   
 </li>
       
@@ -476,6 +443,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../notebook/docqa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tutorial on DocQA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -510,22 +505,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
+  <a href="#swagger-testing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Endpoints
+        Swagger Testing
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Endpoints">
+    <nav class="md-nav" aria-label="Swagger Testing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#post-upload-document" class="md-nav__link">
+  <a href="#ingest" class="md-nav__link">
     <span class="md-ellipsis">
       
-        POST /upload-document
+        Ingest
       
     </span>
   </a>
@@ -533,32 +528,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#get-statusdoc_id" class="md-nav__link">
+  <a href="#answer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GET /status/{doc_id}
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-docsdoc_idmetadata" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GET /docs/{doc_id}/metadata
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#post-questions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        POST /questions
+        Answer
       
     </span>
   </a>
@@ -567,17 +540,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-output" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Output
-      
-    </span>
-  </a>
   
 </li>
       
@@ -598,44 +560,61 @@
 
 
 
-<h1 id="api">API</h1>
-<p>This document describes the REST API for the <strong>Document Question-Answering service</strong>.<br />
-The API allows users to upload documents, index them into a searchable knowledge base, and retrieve answers grounded strictly in the document content.</p>
-<h2 id="endpoints">Endpoints</h2>
-<h3 id="post-upload-document">POST <code>/upload-document</code></h3>
-<p>Performs asynchronous ingestion and indexing; supports a synchronous mode for small files via a query parameter (e.g. ?sync=true).</p>
-<ul>
-<li>Accepts multipart/form-data with a file (PDF or JSON).</li>
-<li>Returns: {}"doc_id": "<uuid>", "ingest_status": "queued"}.</li>
-</ul>
-<h3 id="get-statusdoc_id">GET <code>/status/{doc_id}</code></h3>
-<p>Returns ingest/indexing status, queued tasks, and basic metadata.</p>
-<h3 id="get-docsdoc_idmetadata">GET <code>/docs/{doc_id}/metadata</code></h3>
-<p>Returns stored metadata, file hash, vector index statistics and ingest timestamps.</p>
-<h3 id="post-questions">POST <code>/questions</code></h3>
-<p>Answer a user question by retrieving most relevant chunks from the vector db and framing the answer using LLM.</p>
-<ul>
-<li>Accepts JSON: { "doc_id": "<uuid>", "questions": ["q1", "q2", ...], "retrieval": { "top_k": 5 } } or a JSON file upload of questions.</li>
-<li>Returns structured JSON mapping each question to answer, sources and confidence scores.</li>
-</ul>
-<h2 id="example-output">Example Output</h2>
-<p>Following is the output for each question provided in the json.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;question&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Which cloud service providers are used to host and operate the system, and what roles do they play?&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;answer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The system is hosted primarily on Amazon Web Services (AWS), with Google Cloud Platform (GCP) used as a backup and disaster recovery environment, as documented on page 12.&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;sources&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">&quot;doc_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abc&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;chunk_index&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;text_snippet&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;...we run our primary infrastructure on AWS with GCP as a backup...&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.92</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">],</span>
-<span class="w">  </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.87</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gpt-4o-mini&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
+<h1 id="api-endpoints">API Endpoints</h1>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Method</th>
+<th>Endpoint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health Check</td>
+<td>GET</td>
+<td><code>/health</code></td>
+<td>Returns API health status</td>
+</tr>
+<tr>
+<td>Document Management</td>
+<td>POST</td>
+<td><code>/ingest</code></td>
+<td>Upload and index PDF or JSON documents</td>
+</tr>
+<tr>
+<td>Question Answering</td>
+<td>POST</td>
+<td><code>/answer</code></td>
+<td>Answer a single question</td>
+</tr>
+<tr>
+<td>Question Answering</td>
+<td>POST</td>
+<td><code>/answer/batch</code></td>
+<td _..._="[...]" _questions_:="&quot;questions&quot;:">Upload JSON file with questions array or</td>
+</tr>
+</tbody>
+</table>
+<h2 id="swagger-testing">Swagger Testing</h2>
+<p>Run the following command from <code>docqa-api</code> 
+<div class="highlight"><pre><span></span><code>poetry<span class="w"> </span>run<span class="w"> </span>uvicorn<span class="w"> </span>docqa_api.api.main:app<span class="w"> </span>--reload
+</code></pre></div></p>
+<p>Then visit <code>http://localhost:8000/docs</code> to interact with the API.</p>
+<p>You will be able to view and interact with the API </p>
+<p><img alt="Swagger Page" src="../../img/swaggerpage.png" /></p>
+<h3 id="ingest">Ingest</h3>
+<p>We can ingest a PDF file and check the output.
+<img alt="Ingest PDF" src="../../img/ingest-input.png" /></p>
+<p>The API returned a 200 OK response, indicating that the file was successfully processed and added to the FAISS vector database.
+<img alt="Ingest Response" src="../../img/ingest-response.png" /></p>
+<h3 id="answer">Answer</h3>
+<p>There are 2 APIs for answering a question. The first one is mostly a test api which returns the answer along with other metadata information about the retreval process such as the chunk index, process score etc. </p>
+<p>For the current use case we will look at the <code>/answer_batch</code> api which returns the answers to a batch of questions asked in the form of a json file. 
+<img alt="Answer Input" src="../../img/answer-batch-input.png" /></p>
+<p>The response is in the form of a question, answer pair
+<img alt="Answer Response" src="../../img/answer-batch-response.png" /></p>
 
 
 
