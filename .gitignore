@@ -3,3 +3,10 @@
 *challenge.txt
 *venv
 *ipynb_checkpoints
+.local
+.env
+.pytest_cache
+__pycache__
+*.pyc
+.idea
+.vscode

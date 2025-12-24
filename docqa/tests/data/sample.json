@@ -1,0 +1,20 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the company name?",
+    "answer": "Product Fruits",
+    "comments": "Found in documentation"
+  },
+  {
+    "id": "q2",
+    "question": "Which cloud provider is used?",
+    "answer": "AWS",
+    "comments": "Primary infrastructure"
+  },
+  {
+    "id": "q3",
+    "question": "What is the main product?",
+    "answer": "Document QA System",
+    "comments": "AI-powered Q&A"
+  }
+]

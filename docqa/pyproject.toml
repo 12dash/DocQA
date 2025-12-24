@@ -19,6 +19,11 @@ dependencies = [
     "faiss-cpu (>=1.13.2,<2.0.0)",
     "jq (>=1.10.0,<2.0.0)",
     "mkdocs-jupyter (>=0.25.1,<0.26.0)",
+    "pydantic (>=2.12.5,<3.0.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "uvicorn (>=0.40.0,<0.41.0)",
+    "python-multipart (>=0.0.21,<0.0.22)",
 ]
 
 [tool.poetry]
@@ -28,7 +33,24 @@ packages = [{include = "docqa", from = "src"}]
 mkdocs = ">=1.6.1,<2.0.0"
 mkdocs-material = ">=9.7.1,<10.0.0"
 jupyter = ">=1.1.1,<2.0.0"
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.1.0"
+httpx = ">=0.28.1,<0.29.0"
 
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+asyncio_mode = "auto"
+addopts = "--strict-markers --tb=short -v"
+markers = [
+    "unit: unit tests",
+    "integration: integration tests",
+    "slow: slow running tests",
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
