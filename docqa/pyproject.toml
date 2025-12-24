@@ -1,7 +1,7 @@
 [project]
 name = "docqa"
 version = "0.1.0"
-description = ""
+description = "Retrieval-Augmented Generation (RAG) system for document question answering"
 authors = [
     {name = "Soham Dandapath",email = "soham.dandapath@gmail.com"}
 ]
@@ -13,17 +13,12 @@ dependencies = [
     "langchain-openai (>=1.1.6,<2.0.0)",
     "langchain-community (>=0.4.1,<0.5.0)",
     "langchain-ollama (>=1.0.1,<2.0.0)",
-    "fastapi[standard] (>=0.127.0,<0.128.0)",
-    "flask (>=3.1.2,<4.0.0)",
     "pypdf (>=6.5.0,<7.0.0)",
     "faiss-cpu (>=1.13.2,<2.0.0)",
     "jq (>=1.10.0,<2.0.0)",
-    "mkdocs-jupyter (>=0.25.1,<0.26.0)",
     "pydantic (>=2.12.5,<3.0.0)",
     "pydantic-settings (>=2.12.0,<3.0.0)",
     "python-dotenv (>=1.2.1,<2.0.0)",
-    "uvicorn (>=0.40.0,<0.41.0)",
-    "python-multipart (>=0.0.21,<0.0.22)",
 ]
 
 [tool.poetry]
@@ -32,6 +27,7 @@ packages = [{include = "docqa", from = "src"}]
 [tool.poetry.group.dev.dependencies]
 mkdocs = ">=1.6.1,<2.0.0"
 mkdocs-material = ">=9.7.1,<10.0.0"
+mkdocs-jupyter = ">=0.25.1,<0.26.0"
 jupyter = ">=1.1.1,<2.0.0"
 pytest = "^7.4.0"
 pytest-asyncio = "^0.21.0"

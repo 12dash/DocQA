@@ -108,9 +108,9 @@ class QAEngine:
             if self.vector_store is None:
                 return {
                     "question": question,
-                    "answer": self.settings.not_found_token,
+                    "answer": "Answer not found in the document.",
                     "sources": [],
-                    "model": getattr(self.llm, "model", None),
+                    "model": getattr(self.llm, "model", None) or getattr(self.llm, "model_name", None),
                 }
 
             docs, scores = retrieve(self.vector_store, question, self.settings)
@@ -118,9 +118,9 @@ class QAEngine:
             if not docs:
                 return {
                     "question": question,
-                    "answer": self.settings.not_found_token,
+                    "answer": "Answer not found in the document.",
                     "sources": [],
-                    "model": getattr(self.llm, "model", None),
+                    "model": getattr(self.llm, "model", None) or getattr(self.llm, "model_name", None),
                 }
 
             # Combine docs with scores for context building
@@ -157,5 +157,5 @@ class QAEngine:
                 "question": question,
                 "answer": answer_text if answer_text else self.settings.not_found_token,
                 "sources": sources,
-                "model": getattr(self.llm, "model", None),
+                "model": getattr(self.llm, "model", None) or getattr(self.llm, "model_name", None),
             }

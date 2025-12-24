@@ -31,7 +31,6 @@ def retrieve(
         return docs, scores
 
     if rtype == "mmr":
-        # Diverse retrieval, usually better for long documents
         docs = vector_store.max_marginal_relevance_search(
             query,
             k=k,
@@ -41,7 +40,6 @@ def retrieve(
         return docs, None
 
     if rtype == "similarity_score_threshold":
-        # Implement threshold using FAISS distances -> relevance conversion
         pairs = vector_store.similarity_search_with_score(query, k=k)
         filtered_docs: List[Document] = []
         filtered_scores: List[float] = []
