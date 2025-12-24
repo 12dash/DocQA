@@ -125,7 +125,7 @@ class QAEngine:
 
             # Combine docs with scores for context building
             docs_and_scores: List[Tuple[Document, float]] = [
-                (doc, score if scores and i < len(scores) else 0.0)
+                (doc, scores[i] if scores and i < len(scores) else 0.0)
                 for i, doc in enumerate(docs)
             ]
 

@@ -42,11 +42,11 @@ class Settings(BaseSettings):
     # Retrieval
     # -----------------------
     retrieval_type: str = Field(
-        default="mmr", description="similarity | mmr | similarity_score_threshold")
+        default="similarity", description="similarity | mmr | similarity_score_threshold")
     retrieval_k: int = Field(
-        default=20, description="How many chunks to return")
+        default=100, description="How many chunks to return")
     retrieval_fetch_k: int = Field(
-        default=10, description="MMR only: candidates to fetch before reranking")
+        default=50, description="MMR only: candidates to fetch before reranking")
     retrieval_lambda_mult: float = Field(
         default=0.5, description="MMR only: 0=more diverse, 1=more relevant")
     score_threshold: float = Field(

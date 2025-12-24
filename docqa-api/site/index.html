@@ -215,6 +215,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -231,6 +249,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-it-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What it does
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -420,6 +490,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-it-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What it does
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Users
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it works
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -436,6 +547,30 @@
 
 
 <h1 id="docqa">DocQA</h1>
+<p><strong>DocQA</strong> is a document-grounded Question Answering API. Upload a <strong>PDF or JSON</strong> as a knowledge base and ask questions to receive <strong>answers strictly derived from the document</strong>, with traceable sources.
+It is designed for <strong>automation, compliance (GRC), and knowledge extraction</strong> workflows.</p>
+<h2 id="what-it-does">What it does</h2>
+<ol>
+<li><strong>Ingest documents</strong><br />
+   Upload PDF or JSON files and index them into a vector database.</li>
+<li><strong>Ask questions</strong><br />
+   Submit a single question or a batch of questions as JSON.</li>
+<li><strong>Get grounded answers</strong><br />
+   Responses are generated using a RAG pipeline and are based only on retrieved document chunks.</li>
+</ol>
+<h2 id="users">Users</h2>
+<ul>
+<li><strong>Developer</strong> – uploads documents and manages the knowledge base  </li>
+<li><strong>Consumer</strong> – submits questions as JSON and receives answers</li>
+</ul>
+<h2 id="how-it-works">How it works</h2>
+<ul>
+<li>Text is <strong>chunked</strong> with configurable size and overlap</li>
+<li>Embeddings are generated using <strong>OpenAI</strong> model.</li>
+<li>Vectors are stored in <strong>FAISS</strong></li>
+<li><strong>Top-k semantic retrieval</strong> is used per question</li>
+<li>Answers are generated with a <strong>RAG pipeline</strong> and cite source chunks</li>
+</ul>
 
 
 

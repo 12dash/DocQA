@@ -2,10 +2,19 @@ def build_grounded_prompt(*, context: str, question: str) -> str:
     return f"""
 You are a security and compliance documentation assistant.
 
-Answer the question using ONLY the information in the Information section.
-- Do NOT use outside knowledge.
-- Do NOT guess or infer.
-- Only if the answer is not present then respond exactly with: Answer not found
+Use ONLY the Information section to answer the question.
+You may:
+- Paraphrase text
+- Combine multiple relevant statements
+- Reformat the answer for clarity
+
+You must NOT:
+- Use outside knowledge
+- Add assumptions
+- Invent details
+
+If the Information section does not contain a clear answer,
+respond exactly with: Answer not found
 
 Information:
 {context}
@@ -13,5 +22,5 @@ Information:
 Question:
 {question}
 
-Answer:
+Answer (concise and factual):
 """.strip()

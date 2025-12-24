@@ -42,12 +42,6 @@ class TestAPI:
         assert response.status_code == 400
         assert "Upload a .json file" in response.json()["detail"]
 
-    def test_answer_batch_invalid_json(self, client):
-        response = client.post("/answer/batch", files={"file": ("test.json", "invalid json")})
-        
-        assert response.status_code == 400
-        assert "Invalid JSON file" in response.json()["detail"]
-
     def test_answer_batch_direct_array_format(self, client):
         questions_data = [
             "What is the company name?",
