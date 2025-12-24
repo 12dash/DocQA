@@ -637,17 +637,13 @@
 <h2 id="functional-requirements">Functional Requirements</h2>
 <h3 id="1-inputs">1. Inputs</h3>
 <ul>
-<li>Accept <strong>PDF</strong> and <strong>JSON</strong> files only; reject all other formats with <strong>HTTP 415</strong>.</li>
-<li>Enforce a configurable <strong>maximum file size</strong> (default: 50 MB); return <strong>HTTP 413</strong> if exceeded.</li>
+<li>Accept <strong>PDF</strong> and <strong>JSON</strong> files only.</li>
 <li>Extract and normalize text from PDF and JSON inputs.</li>
 </ul>
 <h3 id="2-text-processing">2. Text Processing</h3>
 <ul>
 <li>Chunk text using configurable <strong>chunk size</strong> and <strong>overlap</strong>.</li>
-<li>Preserve minimal metadata per chunk:</li>
-<li><code>doc_id</code></li>
-<li><code>page</code> (if applicable)</li>
-<li><code>chunk_index</code></li>
+<li>Preserve minimal metadata per chunk such as <code>doc_id</code>, <code>chunk_index</code></li>
 </ul>
 <h3 id="3-embeddings-storage">3. Embeddings &amp; Storage</h3>
 <ul>
@@ -659,7 +655,6 @@
 <ul>
 <li>Perform <strong>top-k semantic retrieval</strong> per question.</li>
 <li>Generate answers using a <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline with a large language model.</li>
-<li>Answers must be grounded strictly in retrieved content by citing the source.</li>
 </ul>
 
 
