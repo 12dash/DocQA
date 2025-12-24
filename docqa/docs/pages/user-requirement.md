@@ -4,9 +4,10 @@ This API is a document-based Question Answering service that allows users to upl
 
 ## User Roles
 
-User roles refers to the people who would be interacting with the API. We will define 2 roles
-- `Developer`: A user who uploads the documents to form the knowledge base. 
-- `Consumer`: A user who would be asking question by passing the json objects. 
+User roles refers to the people who would be interacting with the API. We will define 2 roles : 
+
+- `Developer`: A user who uploads the documents to form the knowledge base.  
+- `Consumer`: A user who would be asking question by passing the json objects.  
 
 ## Functional Requirements
 

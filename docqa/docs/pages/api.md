@@ -28,12 +28,18 @@ Following is the output for each question provided in the json.
 
 ```json
 {
-	"question": "Which cloud providers do you rely on?",
-	"answer": "We rely on Amazon Web Services (primary) and Google Cloud Platform (backup), as documented on page 12.",
-	"sources": [
-		{ "doc_id": "abc", "page": 12, "chunk_index": 3, "text_snippet": "...we run on AWS...", "score": 0.92 }
-	],
-	"confidence": 0.87,
-	"model": "gpt-4o-mini"
+  "question": "Which cloud service providers are used to host and operate the system, and what roles do they play?",
+  "answer": "The system is hosted primarily on Amazon Web Services (AWS), with Google Cloud Platform (GCP) used as a backup and disaster recovery environment, as documented on page 12.",
+  "sources": [
+    {
+      "doc_id": "abc",
+      "page": 12,
+      "chunk_index": 3,
+      "text_snippet": "...we run our primary infrastructure on AWS with GCP as a backup...",
+      "score": 0.92
+    }
+  ],
+  "confidence": 0.87,
+  "model": "gpt-4o-mini"
 }
 ```

@@ -29,8 +29,12 @@ extra_css:
 
 plugins:
   - search
+  - mkdocs-jupyter:
+      ignore_h1_titles: true
 
 nav:
   - Home: index.md
   - User Requirement: pages/user-requirement.md
   - API: pages/api.md
+  - Notebooks:
+      - Basic Notebook: notebook/mvp.ipynb
