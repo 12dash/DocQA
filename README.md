@@ -1,6 +1,8 @@
 # DocQA - Documentation Question Answering System
 A production-ready **Retrieval-Augmented Generation (RAG)** system for querying documents using LLM.
 
+[Website](https://12dash.github.io/DocQA/) : Has example notebook, functional requirement and the example API calls to the RAG pipeline.
+
 ## Overview
 
 DocQA is organized as a **monorepo** with two main components. It uses:
