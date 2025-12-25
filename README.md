@@ -16,3 +16,6 @@ DocQA is organized as a **monorepo** with two main components. It uses:
    - FastAPI-based HTTP endpoints
    - Document ingestion endpoints
    - Single and batch question answering
+
+## Test
+![Test](imgs/tests.png)
