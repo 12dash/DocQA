@@ -21,18 +21,6 @@ def save_faiss(store: FAISS, index_dir: str) -> None:
     store.save_local(index_dir)
 
 
-def build_faiss_from_documents(docs: Iterable[Document], embeddings) -> FAISS:
-    return FAISS.from_documents(list(docs), embeddings)
-
-
-def load_or_create_faiss(index_dir: str, embeddings) -> FAISS:
-    store = load_faiss(index_dir, embeddings)
-    if store is None:
-        raise FileNotFoundError(
-            f"No FAISS index found at {index_dir}. Create it by ingesting documents first."
-        )
-    return store
-
 
 def add_documents_to_faiss(
     store: Optional[FAISS],

@@ -2,6 +2,8 @@ import pytest
 import json
 import tempfile
 from pathlib import Path
+from fastapi.testclient import TestClient
+from docqa_api.api.main import app
 from docqa.config import Settings
 from docqa.pipeline.engine import QAEngine
 
@@ -68,3 +70,24 @@ def test_settings(temp_dir):
 def qa_engine(test_settings):
     """Return QAEngine instance for testing."""
     return QAEngine(settings=test_settings)
+
+
+@pytest.fixture
+def client():
+    """FastAPI TestClient fixture for API tests."""
+    return TestClient(app)
+
+
+@pytest.fixture
+def post_batch(client):
+    """Helper to post batch question files to the API."""
+    def _post(data):
+        return client.post("/answer/batch", files={"file": ("test.json", json.dumps(data))})
+    return _post
+
+
+@pytest.fixture
+def ingested_engine(qa_engine, sample_json_file):
+    """Return a QAEngine with `sample_json_file` already ingested."""
+    qa_engine.ingest_json(sample_json_file)
+    return qa_engine
